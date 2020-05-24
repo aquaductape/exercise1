@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- External Link -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/00f97523d5.js" crossorigin="anonymous"></script>
+  <title>Boeing 777X</title>
+</head>
+
+<body>
+  <!-- Local -->
+  <header class="nav-header">
+    <div><a href="#" class="nav-title"><img class="nav-logo" src="assets/img/boeing-logo-black.svg" alt=""></a></div>
+    <nav class="nav">
+      <ul>
+        <li>
+          <a class="nav-list-link scroll" data-href="overview" href="#">Overview</a>
+        </li>
+        <li>
+          <a class="nav-list-link scroll" data-href="technical_specs" href="#">Technical Specs</a>
+        </li>
+        <li>
+          <a class="nav-list-link scroll" data-href="customers" href="#">Customers</a>
+        </li>
+        <li>
+          <a class="nav-list-link" data-href="contact" href="./layout/contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <video class="hero-video" autoplay loop playsinline muted src="assets/video/boeing_video.mp4" type="video/mp4">
+      </video>
+      <div class="hero-info"><span class="hero-info-c">Discover the New and Innovative 777X.</span><br><span
+          class="hero-info-c"> Better Fuel Efficiency, Passenger Capacity, and Range. </span> </div>
+    </section>
+    <section id="overview" class="overview">
+      <h1 class="section-title">Overview</h1>
+      <div class="overview-content">The new Boeing 777X will be the world’s largest and most efficient twin-engine jet,
+        unmatched in every aspect of performance. With new breakthroughs in aerodynamics and engines, the 777X will
+        deliver 10 percent lower fuel use and emissions and 10 percent lower operating costs than the competition. A
+        true family, the 777X offers low-risk, profitable growth, industry-leading reliability and seamless integration
+        with the 777 and 787 Dreamliner families for even more flexibility. But performance is just part of the story.
+        With a spacious, wide cabin, new custom architecture and innovations from the 787 Dreamliner, the 777X will
+        deliver the flight experience of the future.</div>
+    </section>
+    <section id="technical_specs" class="technical-specs">
+      <h1 class="section-title">Techincal Specs</h1>
+      <table class="technical-specs-table">
+        <tbody>
+          <tr>
+            <td class="align-left"><strong>List Price</strong></td>
+            <td class="align-left">$410.2 million</td>
+          </tr>
+          <tr>
+            <td class="align-left"><strong>Program Launch</strong></td>
+            <td colspan="2" class="align-left">November 2013</td>
+          </tr>
+          <tr>
+            <td class="align-left"><strong>Seats (2-class)</strong></td>
+            <td class="align-left">
+              <div>
+                <div><span>384</span></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="align-left"><strong>Range</strong></td>
+            <td class="align-left">Up to 8,730 nmi (16,170 km)</td>
+          </tr>
+          <tr>
+            <td class="align-left"><strong>Length</strong></td>
+            <td class="align-left">229 feet (69.79 m)</td>
+          </tr>
+          <tr>
+            <td class="align-left"><strong>Wingspan</strong></td>
+            <td colspan="2" class="align-left">Extended: 235 feet, 5 in (71.75 m) <br> On ground: 212 feet, 8 in (64.82
+              m)</td>
+          </tr>
+          <tr>
+            <td class="align-left"><strong>Interior</strong></td>
+            <td class="align-left" colspan="2">Larger windows, wider cabin, new lighting, new architecture </td>
+          </tr>
+          <tr>
+            <td class="align-left"><strong>Configuration</strong></td>
+            <td colspan="2" class="align-left">Twin-aisle (widebody)</td>
+          </tr>
+          <tr>
+            <td class="align-left"><strong>Engine</strong></td>
+            <td class="align-left" colspan="2">GE9X, supplied by GE Aviation</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="customers" class="customers">
+      <h1 class="section-title">Customers</h1>
+      <div class="customer-img"></div>
+      <ul class="customers-container">
+        <li>
+          <div class="customer-tag">All Nipon Airways</div>
+        </li>
+        <li>
+          <div class="customer-tag">British Airways</div>
+        </li>
+        <li>
+          <div class="customer-tag">Cathay Pacific</div>
+        </li>
+        <li>
+          <div class="customer-tag">Emirates</div>
+        </li>
+        <li>
+          <div class="customer-tag">Etihad Airways</div>
+        </li>
+        <li>
+          <div class="customer-tag">Lufthansa</div>
+        </li>
+        <li>
+          <div class="customer-tag">Qatar Airways</div>
+        </li>
+        <li>
+          <div class="customer-tag">Singapore Airlines</div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer"><span id="copyright" class="footer-copyright"></span>
+    <ul class="footer-social"><a href="https://www.instagram.com/boeing/?hl=en" target="_blank"><i
+          class="fab fa-instagram"></i></a><a href="https://www.facebook.com/Boeing/"><i
+          class="fab fa-facebook-square"></i></a></ul>
+  </footer>
+  <script src="app/copyright.js"></script>
+  <script src="app/smoothScroll.js"></script>
+  <script src="app/app.js"></script>
+</body>
+
+</html>
