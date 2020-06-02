@@ -12,13 +12,18 @@ const easeInOutQuad = (t, b, c, d) => {
   return (-c / 2) * (t * (t - 2) - 1) + b;
 };
 
-const smoothScroll = ({ targetId, targetEl, targetElPosition, duration }) => {
+const smoothScroll = ({
+  targetId,
+  targetEl,
+  targetElPosition,
+  duration,
+  paddingTop = 0,
+}) => {
   const target = document.getElementById(targetId) || targetEl;
   const targetPosition =
     targetElPosition != null
-      ? targetElPosition
-      : target.getClientRects()[0].top;
-  console.log({ targetPosition });
+      ? targetElPosition - paddingTop
+      : target.getClientRects()[0].top - paddingTop;
   const startPosition = window.pageYOffset;
   const distance = targetPosition - startPosition;
   let startTime = null;
@@ -30,7 +35,7 @@ const smoothScroll = ({ targetId, targetEl, targetElPosition, duration }) => {
 
   window.addEventListener("mousewheel", mousewheelScrolling);
 
-  const animation = currentTime => {
+  const animation = (currentTime) => {
     if (hasScrolled) {
       window.removeEventListener("mousewheel", mousewheelScrolling);
       return;

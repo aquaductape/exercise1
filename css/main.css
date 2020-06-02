@@ -2,6 +2,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Ubuntu", sans-serif;
+  color: #7986a5;
+  background: #171941;
 }
 
 ul {
@@ -17,35 +19,22 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 section {
-  padding: 50px 50px;
-  margin: 190px auto;
-  max-width: 1200px;
+  margin: 200px 0;
 }
-
 .section-title {
-  color: #bbb;
-  font-size: 50px;
-  font-weight: 400;
+  color: #fff;
+  /* font-weight: 700; */
+  font-size: 40px;
 }
-
-.nav-header {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 40px;
-  background: #fff;
+.navbar {
+  background: #171941;
   transition: box-shadow 500ms;
-  /* color: #ddd; */
 }
 
-.nav-header.active {
-  box-shadow: 0px -6px 14px 0px #0000007d;
+.navbar.active {
+  box-shadow: 0px -6px 24px 0px #000000cc;
 }
 
 .nav-title {
@@ -53,6 +42,7 @@ section {
 }
 
 .nav-logo {
+  color: #fff;
   height: 40px;
 }
 .nav-title:hover {
@@ -81,56 +71,15 @@ section {
   border-bottom-color: #000;
 }
 
-.hero {
-  position: relative;
-  padding: 0;
-  margin-top: 0;
-  padding-top: 0;
-  width: 100%;
-  max-width: 100%;
-}
-
-.hero-video {
-  width: 100%;
-  margin-top: 5vh;
-  height: 95vh;
-  object-fit: cover;
-  object-position: center;
-}
-
-.hero-info {
-  position: absolute;
-  top: 70%;
-  text-align: center;
-  width: 100%;
-  font-size: 40px;
-  font-weight: 700;
-}
-
-.hero-info-c {
-  background: #fff;
-  display: inline-block;
-  margin-bottom: 10px;
-  padding: 0 25px;
-}
-
-.overview-content {
-  line-height: 30px;
-}
-
-.customers-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .customer-img {
+  margin: 50px 0;
   height: 100px;
-  background-image: url("../assets/img/777X-all-nipon-airways.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 50px;
-  transition: background-image 500ms;
+  transition: opacity 500ms;
+}
+
+.customer-img svg {
+  width: 100%;
+  height: 100%;
 }
 
 .customer-tag {
@@ -141,13 +90,19 @@ section {
   border: 2px solid #000;
 }
 
+.overview-content {
+  line-height: 36px;
+}
+
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80px;
-  background: #000;
   color: #fff;
+  padding: 50px 0;
+  border-top: 2px solid #435db5;
+  background: radial-gradient(ellipse at bottom, #292d61 30%, #171941 80%);
 }
 
 .contact-form input {
@@ -211,17 +166,23 @@ section {
   font-weight: 400;
 }
 
-@media (max-width: 620px) {
-  .nav-header {
-    flex-direction: column;
-    padding-top: 30px;
-  }
-  .nav ul {
-    flex-direction: column;
-  }
+.hero-image {
+  height: 500px;
+  max-width: 500px;
+  margin: auto;
+}
 
-  .nav ul li {
-    margin: 10px 0;
-    text-align: center;
-  }
+.hero-info {
+  color: #fff;
+  font-size: 30px;
+}
+.hero-image svg {
+  height: 100%;
+}
+svg {
+  width: 100%;
+}
+
+g {
+  transition: opacity 700ms;
 }

@@ -1,28 +1,32 @@
 const navLinks = document.querySelectorAll(".scroll");
 const navTitle = document.querySelector(".nav-title");
-const header = document.querySelector(".nav-header");
+const header = document.querySelector(".navbar");
 const customerImage = document.querySelector(".customer-img");
 const customerTags = document.querySelectorAll(".customer-tag");
+const heroImage = document.querySelector(".hero-image");
 const duration = 350;
 
-navLinks.forEach(link => {
-  link.addEventListener("click", e => {
+heroImage.innerHTML = svg.planeHero;
+customerImage.innerHTML = svg.airlinePlanes;
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
     e.preventDefault();
     const target = e.currentTarget;
     const targetId = target.dataset["href"];
-    smoothScroll({ targetId, duration });
+    smoothScroll({ targetId, duration, paddingTop: 75 });
 
     history.replaceState(undefined, undefined, `#${targetId}`);
   });
 });
 
-navTitle.addEventListener("click", e => {
+navTitle.addEventListener("click", (e) => {
   e.preventDefault();
   const homePosition = -1 * window.pageYOffset;
   smoothScroll({ targetElPosition: homePosition, duration });
 });
 
-window.addEventListener("scroll", e => {
+window.addEventListener("scroll", (e) => {
   if (window.scrollY > 150) {
     header.classList.add("active");
   } else {
@@ -32,14 +36,20 @@ window.addEventListener("scroll", e => {
 
 for (let i = 0; i < customerTags.length; i++) {
   const customer = customerTags[i];
-  customer.addEventListener("mouseenter", e => {
+  customer.addEventListener("mouseenter", (e) => {
+    const allAirplanes = document.querySelectorAll(`[data-airplane]`);
     const target = e.currentTarget;
-    const content = target.textContent;
-    const fileType = ".png";
-    const path = "assets/img/";
-    const fullPath = `${path}777X-${content
-      .toLowerCase()
-      .replace(/\s/g, "-")}${fileType}`;
-    customerImage.style.backgroundImage = `url(${fullPath})`;
+    const content = target.textContent.toLowerCase().replace(/\s/g, "-");
+    const targetAirplane = customerImage.querySelector(
+      `[data-airplane="${content}"]`
+    );
+
+    targetAirplane.style.opacity = "1";
+
+    allAirplanes.forEach((airplane) => {
+      if (airplane !== targetAirplane) {
+        airplane.style.opacity = "0";
+      }
+    });
   });
 }

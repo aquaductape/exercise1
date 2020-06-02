@@ -5,54 +5,64 @@
   <!-- External Link -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./blk-design-system/assets/css/blk-design-system.min.css">
-  <link rel="stylesheet" href="./blk-design-system/assets/css/nucleo-icons.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/00f97523d5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/main.css">
   <title>Boeing 777X</title>
 </head>
 
 <body>
   <!-- Local -->
-  <header class="nav-header">
-    <div><a href="#" class="nav-title"><img class="nav-logo" src="assets/img/boeing-logo-black.svg" alt=""></a></div>
-    <nav class="nav">
-      <ul>
-        <li>
-          <a class="nav-list-link scroll" data-href="overview" href="#">Overview</a>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <a class="navbar-brand nav-title" href="#"><img class="nav-logo" src="assets/img/boeing-logo.svg"
+        alt="boeing logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link scroll" data-href="overview" href="#overview">Overview</a>
         </li>
-        <li>
-          <a class="nav-list-link scroll" data-href="technical_specs" href="#">Technical Specs</a>
+        <li class="nav-item">
+          <a class="nav-link scroll" data-href="technical_specs" href="#technical_specs">Techincal Specs</a>
         </li>
-        <li>
-          <a class="nav-list-link scroll" data-href="customers" href="#">Customers</a>
+        <li class="nav-item">
+          <a class="nav-link scroll" data-href="customers" href="#customers">Customers</a>
         </li>
-        <li>
-          <a class="nav-list-link" data-href="contact" href="./layout/contact.html">Contact</a>
+        <li class="nav-item">
+          <a class="nav-link" href="./layout/contact.html">Contact</a>
         </li>
       </ul>
-    </nav>
-  </header>
-  <main>
+    </div>
+  </nav>
+  <main class="container">
     <section class="hero">
-      <video class="hero-video" autoplay loop playsinline muted src="assets/video/boeing_video.mp4" type="video/mp4">
-      </video>
       <div class="hero-info"><span class="hero-info-c">Discover the New and Innovative 777X.</span><br><span
           class="hero-info-c"> Better Fuel Efficiency, Passenger Capacity, and Range. </span> </div>
+      <div class="hero-image"></div>
     </section>
     <section id="overview" class="overview">
-      <h1 class="section-title">Overview</h1>
-      <div class="overview-content">The new Boeing 777X will be the world’s largest and most efficient twin-engine jet,
-        unmatched in every aspect of performance. With new breakthroughs in aerodynamics and engines, the 777X will
-        deliver 10 percent lower fuel use and emissions and 10 percent lower operating costs than the competition. A
-        true family, the 777X offers low-risk, profitable growth, industry-leading reliability and seamless integration
-        with the 777 and 787 Dreamliner families for even more flexibility. But performance is just part of the story.
-        With a spacious, wide cabin, new custom architecture and innovations from the 787 Dreamliner, the 777X will
-        deliver the flight experience of the future.</div>
+      <h2 class="section-title">Overview</h2>
+      <div class="overview-content">
+        <div> The new Boeing 777X will be the world’s largest and most efficient twin-engine jet, unmatched in every
+          aspect of performance. </div>
+        <div> The 777X will deliver 10 percent lower fuel use and emissions and 10 percent lower operating costs than
+          the competition. </div>
+        <div> A true family, the 777X offers low-risk, profitable growth, industry-leading reliability and seamless
+          integration with the 777 and 787 Dreamliner families for even more flexibility. </div>
+        <div> With a spacious, wide cabin, new custom architecture and innovations from the 787 Dreamliner, the 777X
+          will deliver the flight experience of the future. </div>
+      </div>
     </section>
     <section id="technical_specs" class="technical-specs">
-      <h1 class="section-title">Techincal Specs</h1>
+      <h2 class="section-title">Techincal Specs</h2>
       <table class="technical-specs-table">
         <tbody>
           <tr>
@@ -100,9 +110,9 @@
       </table>
     </section>
     <section id="customers" class="customers">
-      <h1 class="section-title">Customers</h1>
+      <h2 class="section-title">Customers</h2>
       <div class="customer-img"></div>
-      <ul class="customers-container">
+      <ul class="customers-container row">
         <li>
           <div class="customer-tag">All Nipon Airways</div>
         </li>
@@ -116,9 +126,6 @@
           <div class="customer-tag">Emirates</div>
         </li>
         <li>
-          <div class="customer-tag">Etihad Airways</div>
-        </li>
-        <li>
           <div class="customer-tag">Lufthansa</div>
         </li>
         <li>
@@ -130,15 +137,24 @@
       </ul>
     </section>
   </main>
-  <footer class="footer"><span id="copyright" class="footer-copyright"></span>
-    <ul class="footer-social"><a href="https://www.instagram.com/boeing/?hl=en" target="_blank"><i
-          class="fab fa-instagram"></i></a><a href="https://www.facebook.com/Boeing/"><i
-          class="fab fa-facebook-square"></i></a></ul>
+  <footer class="footer">This is a student project <ul class="footer-social"><a
+        href="https://www.instagram.com/boeing/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a><a
+        href="https://www.facebook.com/Boeing/"><i class="fab fa-facebook-square"></i></a></ul>
   </footer>
-  <script src="./blk-design-system/assets/js/core/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="app/svg.js"></script>
   <script src="app/copyright.js"></script>
   <script src="app/smoothScroll.js"></script>
   <script src="app/app.js"></script>
+  <!-- placed scripts after content 90% that content will load first -->
 </body>
 
 </html>
