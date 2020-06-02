@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/order.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/00f97523d5.js" crossorigin="anonymous"></script>
+  <title>Boeing 777X | Order</title>
+</head>
+
+<body>
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    data-toggle="modal" aria-hidden="true" id="modal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content d-flex align-items-center justify-content-center p-5">
+        <div class="circle-loader ">
+          <div class="checkmark draw"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <a class="navbar-brand nav-title" href="../index.html"><img class="nav-logo" src="../assets/img/boeing-logo.svg"
+        alt="boeing logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link scroll" data-href="overview" href="../index.html#overview">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll" data-href="technical_specs" href="../index.html#technical_specs">Techincal
+            Specs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scroll" data-href="customers" href="../index.html#customers">Customers</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="price-controll d-flex flex-column align-items-center">
+      <div class="cost">Cost: $<span class="cost-s">410,200,000</span></div>
+      <div class="amount">Amount: <span class="amount-s">1</span>x</div>
+      <div class="controller d-flex">
+        <button class="btn btn-primary" id="increase">+</button>
+        <button class="btn btn-outline-primary" id="reset">Reset</button>
+        <button class="btn btn-primary" id="decrease">-</button>
+      </div>
+    </div>
+    <form class="needs-validation" novalidate>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Company</label>
+          <input type="text" name="company" class="form-control" id="inputPassword4" placeholder="Company" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" name="address" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Address 2</label>
+        <input type="text" name="address2" class="form-control" id="inputAddress2"
+          placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" name="city" class="form-control" id="inputCity" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <select id="inputState" name="state" class="form-control" required>
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip</label>
+          <input type="text" name="zip" class="form-control" id="inputZip" required>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </main>
+  <footer class="footer">This is a student project <ul class="footer-social"><a
+        href="https://www.instagram.com/boeing/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a><a
+        href="https://www.facebook.com/Boeing/"><i class="fab fa-facebook-square"></i></a></ul>
+  </footer>
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="../app/order.js"></script>
+</body>
+
+</html>

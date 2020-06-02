@@ -1,0 +1,174 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif !important;
+  /* color: #7986a5 !important;
+  background: #171941 !important; */
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  background: #171941;
+  transition: box-shadow 500ms;
+}
+
+.navbar.active {
+  box-shadow: 0px -6px 24px 0px #000000cc;
+}
+
+.nav-title {
+  text-transform: uppercase;
+}
+
+.nav-logo {
+  color: #fff;
+  height: 40px;
+}
+.nav-title:hover {
+  /* color: #fff; */
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  margin-left: 20px;
+}
+
+.nav ul li:hover {
+  /* color: #fff; */
+}
+
+.nav-list-link {
+  padding: 5px 10px;
+  border-bottom: 2px solid #fff;
+  transition: border 500ms;
+}
+
+.nav-list-link:hover {
+  border-bottom-color: #000;
+}
+
+main {
+  margin: 100px 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  color: #fff;
+  padding: 50px 0;
+  border-top: 2px solid #435db5;
+  background: radial-gradient(ellipse at bottom, #292d61 30%, #171941 80%);
+}
+
+.footer-social {
+  display: flex;
+  margin-left: 50px;
+}
+
+.footer-social a {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.cost,
+.amount {
+  font-size: 35px;
+}
+
+.controller {
+  margin-bottom: 50px;
+}
+
+.circle-loader {
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left-color: #5cb85c;
+  animation: loader-spin 1.2s infinite linear;
+  position: relative;
+  vertical-align: top;
+  border-radius: 50%;
+  width: 7em;
+  height: 7em;
+}
+
+.load-complete {
+  -webkit-animation: none;
+  animation: none;
+  border-color: #5cb85c;
+  transition: border 500ms ease-out;
+}
+
+.checkmark {
+  display: none;
+}
+.checkmark.draw:after {
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-name: checkmark;
+  transform: scaleX(-1) rotate(135deg);
+}
+.checkmark:after {
+  opacity: 1;
+  height: 3.5em;
+  width: 1.75em;
+  transform-origin: left top;
+  border-right: 3px solid #5cb85c;
+  border-top: 3px solid #5cb85c;
+  content: "";
+  left: 1.75em;
+  top: 3.5em;
+  position: absolute;
+}
+
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 1.75em;
+    opacity: 1;
+  }
+  40% {
+    height: 3.5em;
+    width: 1.75em;
+    opacity: 1;
+  }
+  100% {
+    height: 3.5em;
+    width: 1.75em;
+    opacity: 1;
+  }
+}

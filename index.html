@@ -43,7 +43,7 @@
           <a class="nav-link scroll" data-href="customers" href="#customers">Customers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./layout/contact.html">Contact</a>
+          <a class="nav-link" href="./pages/order.html">Order</a>
         </li>
       </ul>
     </div>
@@ -67,52 +67,57 @@
     </section>
     <section id="technical_specs" class="technical-specs">
       <h2 class="section-title">Techincal Specs</h2>
-      <table class="technical-specs-table">
-        <tbody>
-          <tr>
-            <td class="align-left"><strong>List Price</strong></td>
-            <td class="align-left">$410.2 million</td>
-          </tr>
-          <tr>
-            <td class="align-left"><strong>Program Launch</strong></td>
-            <td colspan="2" class="align-left">November 2013</td>
-          </tr>
-          <tr>
-            <td class="align-left"><strong>Seats (2-class)</strong></td>
-            <td class="align-left">
-              <div>
-                <div><span>384</span></div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="align-left"><strong>Range</strong></td>
-            <td class="align-left">Up to 8,730 nmi (16,170 km)</td>
-          </tr>
-          <tr>
-            <td class="align-left"><strong>Length</strong></td>
-            <td class="align-left">229 feet (69.79 m)</td>
-          </tr>
-          <tr>
-            <td class="align-left"><strong>Wingspan</strong></td>
-            <td colspan="2" class="align-left">Extended: 235 feet, 5 in (71.75 m) <br> On ground: 212 feet, 8 in (64.82
-              m)</td>
-          </tr>
-          <tr>
-            <td class="align-left"><strong>Interior</strong></td>
-            <td class="align-left" colspan="2">Larger windows, wider cabin, new lighting, new architecture </td>
-          </tr>
-          <tr>
-            <td class="align-left"><strong>Configuration</strong></td>
-            <td colspan="2" class="align-left">Twin-aisle (widebody)</td>
-          </tr>
-          <tr>
-            <td class="align-left"><strong>Engine</strong></td>
-            <td class="align-left" colspan="2">GE9X, supplied by GE Aviation</td>
-          </tr>
-        </tbody>
-      </table>
-      <div id="mapid"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <strong>List Price</strong>
+          </div>
+          <div class="col-sm"> $410.2 million </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <strong>Seats (2-class)</strong>
+          </div>
+          <div class="col-sm"> 384 </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <strong>Range</strong>
+          </div>
+          <div class="col-sm"> Up to 8,730 nmi (16,170 km) </div>
+        </div>
+        <div class="mt-3 mb-3">
+          <div id="mapid"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <strong>Length</strong>
+          </div>
+          <div class="col-sm"> 229 feet (69.79 m) </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <strong>Wingspan</strong>
+          </div>
+          <div class="col-sm"> Extended: 235 feet, 5 in (71.75 m) <br> On ground: 212 feet, 8 in (64.82 m) </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <strong>Interior</strong>
+          </div>
+          <div class="col-sm"> Larger windows, wider cabin, new lighting, new architecture </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <strong>Configuration</strong> Twin-aisle (widebody) </div>
+          <div class="col-sm"> Twin-aisle (widebody) </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <strong>Engine</strong> GE9X, supplied by GE Aviation </div>
+          <div class="col-sm"> GE9X, supplied by GE Aviation </div>
+        </div>
+      </div>
     </section>
     <section id="customers" class="customers">
       <h2 class="section-title">Customers</h2>
@@ -141,6 +146,9 @@
         </li>
       </ul>
     </section>
+    <div class="order-container">
+      <a class="order" href="./pages/order.html">Order</a>
+    </div>
   </main>
   <footer class="footer">This is a student project <ul class="footer-social"><a
         href="https://www.instagram.com/boeing/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a><a
@@ -156,7 +164,6 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
   <script src="app/svg.js"></script>
-  <script src="app/copyright.js"></script>
   <script src="app/smoothScroll.js"></script>
   <script src="app/map.js"></script>
   <script src="app/app.js"></script>

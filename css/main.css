@@ -19,6 +19,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 #mapid {
   height: 380px;
 }
@@ -74,6 +75,33 @@ section {
   border-bottom-color: #000;
 }
 
+.order-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  margin-bottom: 100px;
+}
+
+.order {
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  border: 2px solid blue;
+}
+.order:hover,
+.order:focus {
+  color: #fff;
+  text-decoration: none;
+  background: blue;
+}
+
+/* .order a {
+  color: #fff;
+} */
+
 .customer-img {
   margin: 50px 0;
   height: 100px;
@@ -90,7 +118,8 @@ section {
   border-radius: 20px;
   margin-right: 10px;
   margin-bottom: 10px;
-  border: 2px solid #000;
+  border: 2px solid #ccc;
+  color: #ccc;
 }
 
 .overview-content {
@@ -112,13 +141,6 @@ section {
   background: #eee;
   border: none;
   border-bottom: 2px solid #999;
-}
-
-.contact-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
 }
 
 .footer-social {
