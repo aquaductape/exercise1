@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="boeing-wingspan.svg"
+   inkscape:version="1.0 (6e3e5246a0, 2020-05-07)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 83.62191 38.456905"
+   height="38.456905mm"
+   width="83.62191mm">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient1034"
+       inkscape:collect="always">
+      <stop
+         id="stop1030"
+         offset="0"
+         style="stop-color:#b3b3b3;stop-opacity:1;" />
+      <stop
+         id="stop1032"
+         offset="1"
+         style="stop-color:#b3b3b3;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="matrix(0.26458333,0,0,0.26458333,-13.499813,-62.183744)"
+       gradientUnits="userSpaceOnUse"
+       y2="316.74478"
+       x2="367.6214"
+       y1="316.74478"
+       x1="359.52255"
+       id="linearGradient1036"
+       xlink:href="#linearGradient1034"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="27"
+     inkscape:window-x="0"
+     inkscape:window-height="1016"
+     inkscape:window-width="1920"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="g1046"
+     inkscape:document-units="mm"
+     inkscape:cy="56.836406"
+     inkscape:cx="133.85251"
+     inkscape:zoom="2"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       id="g1046">
+      <g
+         id="g1078">
+        <path
+           d="M 74.906159,2.1921715 74.301546,16.228524 c 0,0 -1.90523,0.284935 -2.737818,0.707966 -0.832589,0.423032 -1.612826,1.153219 -2.145607,1.760617 -0.532778,0.607399 -0.807612,1.18428 -1.094505,1.759583 -0.286893,0.575302 -0.643371,1.665015 -0.643371,1.665015 l -0.04806,0.977717 -14.307134,-1.264523 14.288531,2.694927 0.183452,1.329634 -17.238223,-2.210718 -15.754077,-1.514636 -23.298836,-1.864485 -0.0801,0.622184 c 12.942107,1.256273 27.059379,2.550099 30.132527,2.920751 2.410767,0.385667 7.180959,1.441773 7.180959,1.441773 -0.428382,0.414816 -0.668976,0.575622 -0.932244,0.925526 -0.342096,0.45467 -0.625602,0.962345 -0.820105,1.497065 -0.18269,0.502251 -0.314246,1.038071 -0.313161,1.572514 0.0011,0.485516 0.123947,0.971219 0.290423,1.427303 0.242051,0.663135 0.543147,1.333259 1.013891,1.859317 0.480158,0.53658 1.114414,0.940826 1.770435,1.237652 0.641866,0.29042 1.350648,0.448021 2.053104,0.501777 0.569624,0.04359 1.157329,0.0054 1.70739,-0.148828 0.505487,-0.141785 0.989703,-0.386308 1.411282,-0.699183 0.365988,-0.271619 0.693402,-0.610912 0.935861,-0.996836 0.280691,-0.446778 0.43869,-0.965748 0.569476,-1.476915 0.218165,-1.16995 0.458779,-2.110224 0.302305,-3.142959 -0.03853,-0.146733 -0.245978,-0.382923 -0.245978,-0.382923 l 0.479557,-0.649055 3.780131,0.894519 2.594155,0.67541 v 5.719548 H 63.05417 v -0.74104 h -1.364257 v 2.707328 h 1.297596 V 35.44647 h 1.696018 v 0.602031 h 1.236102 v -2.696475 h -1.33532 v 0.698148 h -0.283702 v -1.388546 l 3.164665,-3.237527 0.177766,0.04651 0.578776,0.500742 1.371491,1.076939 1.133782,0.250629 h 3.790984 v 2.684074 h -1.077454 v 2.399337 h 1.006657 v -0.49506 h 0.811837 v 0.475941 h 1.036111 v -2.379184 h -0.95808 V 31.29892 h 3.409093 l 1.133782,-0.250629 1.371491,-1.076939 0.578776,-0.500742 0.227894,-0.05943 1.563729,1.599901 v -0.691947 l -1.015441,-1.050583 1.015441,-0.264584 v -3.394106 l -1.945618,0.249597 0.189137,-1.372526 1.756481,-0.331245 V 22.92217 l -1.781804,0.157613 -0.04703,-0.95808 c 0,0 -0.356396,-1.089705 -0.643371,-1.665015 -0.286975,-0.57531 -0.562229,-1.152226 -1.095023,-1.759583 -0.532794,-0.607356 -1.367615,-1.365583 -2.145088,-1.760617 -0.777476,-0.395033 -2.379184,-0.61495 -2.379184,-0.61495 z m -10.605553,26.4082055 2.616377,0.681095 -2.616377,2.706812 z m 19.315615,4.751649 v 2.696475 h 0.0057 v -2.696475 z"
+           style="fill:url(#linearGradient1036);fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path909" />
+        <path
+           d="m 74.779553,20.367289 -3.361037,0.03307 -0.287321,1.48208 0.951365,-0.398426 2.696993,-0.0083 2.696993,0.0083 0.951362,0.398426 -0.286803,-1.48208 z"
+           style="fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="path914" />
+        <path
+           inkscape:transform-center-y="-0.3664065"
+           inkscape:transform-center-x="5.7410222"
+           id="path955"
+           d="M 11.501943,20.269461 0,19.504689 11.430172,20.892661 Z"
+           style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <circle
+           r="3.6601288"
+           cy="29.429705"
+           cx="51.697445"
+           id="path957"
+           style="fill:#333333;fill-opacity:1;stroke:none;stroke-width:1.53726;stroke-linecap:round" />
+        <path
+           id="path1016"
+           d="M 10.778187,3.524238 V 38.456906"
+           style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.59, 0.265;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text1020"
+           y="2.680285"
+           x="12.831026"
+           style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           xml:space="preserve"><tspan
+             style="font-size:3.52778px;stroke-width:0.264583"
+             y="2.680285"
+             x="12.831026"
+             id="tspan1018"
+             sodipodi:role="line">Other Boeing 777 wingspan</tspan></text>
+        <path
+           id="path1022"
+           d="M 10.777309,3.086119 H 63.013682"
+           style="fill:none;stroke:#000000;stroke-width:0.287987px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           sodipodi:nodetypes="cc" />
+      </g>
+    </g>
+  </g>
+</svg>

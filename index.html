@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/00f97523d5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
   <link rel="stylesheet" href="./css/main.css">
   <title>Boeing 777X</title>
 </head>
@@ -55,8 +61,6 @@
           aspect of performance. </div>
         <div> The 777X will deliver 10 percent lower fuel use and emissions and 10 percent lower operating costs than
           the competition. </div>
-        <div> A true family, the 777X offers low-risk, profitable growth, industry-leading reliability and seamless
-          integration with the 777 and 787 Dreamliner families for even more flexibility. </div>
         <div> With a spacious, wide cabin, new custom architecture and innovations from the 787 Dreamliner, the 777X
           will deliver the flight experience of the future. </div>
       </div>
@@ -108,6 +112,7 @@
           </tr>
         </tbody>
       </table>
+      <div id="mapid"></div>
     </section>
     <section id="customers" class="customers">
       <h2 class="section-title">Customers</h2>
@@ -153,6 +158,7 @@
   <script src="app/svg.js"></script>
   <script src="app/copyright.js"></script>
   <script src="app/smoothScroll.js"></script>
+  <script src="app/map.js"></script>
   <script src="app/app.js"></script>
   <!-- placed scripts after content 90% that content will load first -->
 </body>

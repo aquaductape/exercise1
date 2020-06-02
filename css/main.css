@@ -19,6 +19,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+#mapid {
+  height: 380px;
+}
 
 section {
   margin: 200px 0;
@@ -178,8 +181,6 @@ section {
 }
 .hero-image svg {
   height: 100%;
-}
-svg {
   width: 100%;
 }
 

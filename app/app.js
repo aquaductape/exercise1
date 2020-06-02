@@ -14,7 +14,7 @@ navLinks.forEach((link) => {
     e.preventDefault();
     const target = e.currentTarget;
     const targetId = target.dataset["href"];
-    smoothScroll({ targetId, duration, paddingTop: 75 });
+    smoothScroll({ targetId, duration, paddingTop: 85 });
 
     history.replaceState(undefined, undefined, `#${targetId}`);
   });
